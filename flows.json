@@ -88,7 +88,7 @@
         ],
         "x": 14,
         "y": 19,
-        "w": 1032,
+        "w": 1012,
         "h": 182
     },
     {
@@ -1019,7 +1019,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 690,
+        "x": 670,
         "y": 60,
         "wires": [
             [
@@ -1040,7 +1040,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 690,
+        "x": 670,
         "y": 160,
         "wires": [
             [
@@ -1062,7 +1062,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 910,
+        "x": 890,
         "y": 60,
         "wires": []
     },
@@ -1080,7 +1080,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 910,
+        "x": 890,
         "y": 160,
         "wires": []
     },
