@@ -1,0 +1,4677 @@
+[
+    {
+        "id": "lab1_sensores_final",
+        "type": "tab",
+        "label": "Lab 1 - Sensores",
+        "disabled": false,
+        "info": "Laboratorio de sensores de temperatura y humedad con alarmas, LED, chart y gauge"
+    },
+    {
+        "id": "e5358fb4d49d660d",
+        "type": "tab",
+        "label": "MQTT",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9ff678e3502a1c0c",
+        "type": "tab",
+        "label": "API REST",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "682afd4f040b885f",
+        "type": "tab",
+        "label": "API REST CLIMA - GET",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f34c405573e2813b",
+        "type": "tab",
+        "label": "API REST - POST",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f6e12809e43eb081",
+        "type": "tab",
+        "label": "MARKDOWN",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7b3c34f6348d258c",
+        "type": "group",
+        "z": "f6e12809e43eb081",
+        "name": "Página inicial Markdown",
+        "style": {
+            "fill": "#FFE082",
+            "label": true,
+            "stroke": "#999999",
+            "fill-opacity": "0.28"
+        },
+        "nodes": [
+            "6b07e28fb8b8bb02",
+            "92d9b7bdb7ecfbf3"
+        ],
+        "x": 14,
+        "y": 19,
+        "w": 332,
+        "h": 122
+    },
+    {
+        "id": "grp_editor_f5f82",
+        "type": "group",
+        "z": "lab1_sensores_final",
+        "name": "Ejercicio 1A - Sensor con alarmas (Function)",
+        "style": {
+            "fill": "#BBDEFB",
+            "label": true,
+            "stroke": "#999999",
+            "fill-opacity": "0.22"
+        },
+        "nodes": [
+            "inject_trigger",
+            "temp_conversion",
+            "hum_conversion",
+            "temp_debug",
+            "hum_debug",
+            "comentario",
+            "random_sensor"
+        ],
+        "x": 14,
+        "y": 19,
+        "w": 1012,
+        "h": 182
+    },
+    {
+        "id": "grp_editor_03a2c",
+        "type": "group",
+        "z": "lab1_sensores_final",
+        "name": "Ejercicio 1B - Sensor con alarmas (Change + Switch)",
+        "style": {
+            "fill": "#C8E6C9",
+            "label": true,
+            "stroke": "#999999",
+            "fill-opacity": "0.22"
+        },
+        "nodes": [
+            "47c49401917e921d",
+            "2bd76d358a4211ba",
+            "38c5ca52b1f5a814",
+            "20bc7bc546f9c52c",
+            "aba2dfc2ac6fd615",
+            "e57b7e948d20e10c",
+            "e8c5229e2b6a711b",
+            "38011359ea77d6bd",
+            "e84f31cf410406e8",
+            "5288ead6f8119113",
+            "abe0920e55353b4f",
+            "0ca4cedd9710fe56",
+            "f75f63161108e24d",
+            "de92390cfb25b0b0"
+        ],
+        "x": 14,
+        "y": 239,
+        "w": 1412,
+        "h": 522
+    },
+    {
+        "id": "grp_editor_ca255",
+        "type": "group",
+        "z": "lab1_sensores_final",
+        "name": "Ejercicio 1C - Sensor LED",
+        "style": {
+            "fill": "#FFE0B2",
+            "label": true,
+            "stroke": "#999999",
+            "fill-opacity": "0.22"
+        },
+        "nodes": [
+            "f2df23cbc6ef9863",
+            "3e07d0caea206686",
+            "bc01b6aaf24e113b",
+            "5a90e79329d497da",
+            "22c702d9df40c8c2",
+            "a2fd85b4290b6ab1",
+            "fdaf10c5557bf325"
+        ],
+        "x": 14,
+        "y": 779,
+        "w": 952,
+        "h": 202
+    },
+    {
+        "id": "grp_editor_c5c4b",
+        "type": "group",
+        "z": "lab1_sensores_final",
+        "name": "Ejercicio 1D - Chart Multiple y Gauge Linear",
+        "style": {
+            "fill": "#E1BEE7",
+            "label": true,
+            "stroke": "#999999",
+            "fill-opacity": "0.22"
+        },
+        "nodes": [
+            "6d0a50861ed5a07d",
+            "388c2382b94f48c6",
+            "adce740d79a7b584",
+            "7f259cff9f13d957",
+            "ce0abd0310d7e846",
+            "5ad4737434775750",
+            "5d612d37fd94577c",
+            "70ac34c6d9985199",
+            "7363475cd5b3b580",
+            "50620f0c7ee92ebd",
+            "144a95285cb4082f"
+        ],
+        "x": 14,
+        "y": 1039,
+        "w": 802,
+        "h": 422
+    },
+    {
+        "id": "grp_editor_14c18",
+        "type": "group",
+        "z": "e5358fb4d49d660d",
+        "name": "Ejercicio 2A - MQTT Suscriptor y Dashboard",
+        "style": {
+            "fill": "#B3E5FC",
+            "label": true,
+            "stroke": "#999999",
+            "fill-opacity": "0.22"
+        },
+        "nodes": [
+            "8a11bf79b2ebfae1",
+            "5766fcc8263a361d",
+            "e1931bbac71750f3",
+            "12bf656a4a3c0fc4",
+            "9b9fe0e9ed39ba6b",
+            "821c9fc48ff761db",
+            "a9ba2d0baa223935",
+            "44a544b35cb9415c",
+            "b513b84ee0b82bda",
+            "2730af46b881e051",
+            "44e8893543b16e96"
+        ],
+        "x": 14,
+        "y": 19,
+        "w": 902,
+        "h": 422
+    },
+    {
+        "id": "grp_editor_49b66",
+        "type": "group",
+        "z": "e5358fb4d49d660d",
+        "name": "Ejercicio 2B - MQTT Publicador JSON",
+        "style": {
+            "fill": "#DCEDC8",
+            "label": true,
+            "stroke": "#999999",
+            "fill-opacity": "0.22"
+        },
+        "nodes": [
+            "5087d4e8157fbf8a",
+            "8b300eb33a530cdf",
+            "2f40e6a5aad622f0",
+            "8bbc9f0fe578b099",
+            "a0edde539f2b7a5a",
+            "dca2360c28fe8fa6",
+            "d533817a6b24809c"
+        ],
+        "x": 14,
+        "y": 459,
+        "w": 1032,
+        "h": 182
+    },
+    {
+        "id": "grp_editor_cca42",
+        "type": "group",
+        "z": "9ff678e3502a1c0c",
+        "name": "Ejercicio 3A - Cliente API REST GET",
+        "style": {
+            "fill": "#FFF9C4",
+            "label": true,
+            "stroke": "#999999",
+            "fill-opacity": "0.22"
+        },
+        "nodes": [
+            "inject_cada_minuto",
+            "debug_respuesta",
+            "http_request",
+            "38eeb6862e4f4686",
+            "1cdb412674126add",
+            "01918190cba9db5a",
+            "605d88dd88c11645",
+            "de939736bdef700c",
+            "b04b58bdca5fdc75",
+            "9452044c1ea418f2",
+            "45b34b32853e064f",
+            "490dbc5cc44985a2",
+            "f2b923ac8ddae0dd",
+            "befd2e1b8d9e9232"
+        ],
+        "x": 34,
+        "y": 19,
+        "w": 1202,
+        "h": 402
+    },
+    {
+        "id": "grp_editor_281f2",
+        "type": "group",
+        "z": "9ff678e3502a1c0c",
+        "name": "Ejercicio 3B - Servidor API REST GET y Dashboard",
+        "style": {
+            "fill": "#FFCCBC",
+            "label": true,
+            "stroke": "#999999",
+            "fill-opacity": "0.22"
+        },
+        "nodes": [
+            "1d1803015460c8bd",
+            "a7487aa0adf61137",
+            "4c43390c99019ef3",
+            "6e243d533deb096c",
+            "65dfa8f1edc39891",
+            "e5d82345ace47861",
+            "d1334a5256cd10a0",
+            "86b059efadb29095",
+            "8e32a944c802adca",
+            "4f1f4d131803c0ab"
+        ],
+        "x": 34,
+        "y": 439,
+        "w": 852,
+        "h": 302
+    },
+    {
+        "id": "grp_editor_e893e",
+        "type": "group",
+        "z": "682afd4f040b885f",
+        "name": "Ejercicio 4A - Clima con WeatherStack",
+        "style": {
+            "fill": "#D1C4E9",
+            "label": true,
+            "stroke": "#999999",
+            "fill-opacity": "0.22"
+        },
+        "nodes": [
+            "eaf1d130f0c4b46e",
+            "b7655f1db9260177",
+            "5f81d1b36eaac9a7",
+            "09013078dd1a9e3f",
+            "173b59eb5d35cac0",
+            "54170daf92ff55bd",
+            "b4df4ab28a26b663",
+            "35515f13da63c697",
+            "01fdf23ad98a734d",
+            "e8cb13e2053e85ef",
+            "ed83cda81b801e2f",
+            "2622b6dfaffe639a",
+            "ff9330c515a0790d",
+            "8a2965d31819ebb1",
+            "15e107fa1cbd599c",
+            "93fadc95d6ecf8a7"
+        ],
+        "x": 14,
+        "y": 19,
+        "w": 1152,
+        "h": 422
+    },
+    {
+        "id": "grp_editor_af676",
+        "type": "group",
+        "z": "682afd4f040b885f",
+        "name": "Ejercicio 4B - Clima con OpenWeather",
+        "style": {
+            "fill": "#B2DFDB",
+            "label": true,
+            "stroke": "#999999",
+            "fill-opacity": "0.22"
+        },
+        "nodes": [
+            "82f8805146afbf9b",
+            "dd2609ee8dcfcced",
+            "3ecd507b51a074f1",
+            "216573e200ef4a94",
+            "8f910d5cc1aad23b",
+            "2d708b4737870410",
+            "d821af2a582d0ac9",
+            "2a0499191fb2794f",
+            "2edd740d022aaced",
+            "df970f714e51e73d"
+        ],
+        "x": 14,
+        "y": 459,
+        "w": 1132,
+        "h": 322
+    },
+    {
+        "id": "grp_editor_c1a45",
+        "type": "group",
+        "z": "f34c405573e2813b",
+        "name": "Ejercicio 5A - Cliente API REST POST",
+        "style": {
+            "fill": "#FFECB3",
+            "label": true,
+            "stroke": "#999999",
+            "fill-opacity": "0.22"
+        },
+        "nodes": [
+            "1db30be662411ed0",
+            "f3f4c146ac66b395",
+            "74dbbdc1c9f405cd",
+            "193234fdaea136a4"
+        ],
+        "x": 24,
+        "y": 39,
+        "w": 700,
+        "h": 102
+    },
+    {
+        "id": "grp_editor_ab46d",
+        "type": "group",
+        "z": "f34c405573e2813b",
+        "name": "Ejercicio 5B - Servidor API REST POST",
+        "style": {
+            "fill": "#F8BBD0",
+            "label": true,
+            "stroke": "#999999",
+            "fill-opacity": "0.22"
+        },
+        "nodes": [
+            "152e573b077b5253",
+            "b14d62c3df537614",
+            "9e7f6ee0f5e958b4",
+            "494fee76a8429418"
+        ],
+        "x": 24,
+        "y": 319,
+        "w": 520,
+        "h": 142
+    },
+    {
+        "id": "c39eb3d1afd74a4e",
+        "type": "group",
+        "z": "f6e12809e43eb081",
+        "name": "Markdown de páginas y navegación Back/Next",
+        "style": {
+            "fill": "#D7CCC8",
+            "label": true,
+            "stroke": "#999999",
+            "fill-opacity": "0.22"
+        },
+        "nodes": [
+            "nav_control_8a8f",
+            "btn_inicio_next_",
+            "md_lab_3da9dfab2",
+            "btn_back_4efec3b",
+            "btn_next_ff9ddbb",
+            "md_lab_97a1b099b",
+            "btn_back_43ff780",
+            "btn_next_fe6ed29",
+            "md_lab_b356aeaf4",
+            "btn_back_86454f7",
+            "btn_next_e0f9318",
+            "md_lab_34975bade",
+            "btn_back_8a4797a",
+            "btn_next_807d7ef",
+            "md_lab_6c71cee73",
+            "btn_back_c345514",
+            "btn_next_e69f75e"
+        ],
+        "x": 14,
+        "y": 179,
+        "w": 852,
+        "h": 502
+    },
+    {
+        "id": "83b381c77ae612cf",
+        "type": "ui-base",
+        "name": "Laboratorios IoT - Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "da2156bca1385b19",
+        "type": "ui-theme",
+        "name": "Tema Laboratorios",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#1976D2",
+            "bgPage": "#eef3f8",
+            "groupBg": "#ffffff",
+            "groupOutline": "#d7dde5"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "44731425361cb96d",
+        "type": "ui-page",
+        "name": "🌡️ Lab 1 - Sensores",
+        "ui": "83b381c77ae612cf",
+        "path": "/sensores",
+        "icon": "thermometer-lines",
+        "layout": "grid",
+        "theme": "da2156bca1385b19",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "36b6bba306241b44",
+        "type": "ui-group",
+        "name": "Indicador LED del sensor",
+        "page": "44731425361cb96d",
+        "width": 12,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "theme_default",
+        "type": "ui-theme",
+        "name": "Default",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#f5f5f5"
+        }
+    },
+    {
+        "id": "94242a7ab801cb90",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "127.0.0.1",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "599dc45785c194e2",
+        "type": "ui-page",
+        "name": "📡 Lab 2 - MQTT",
+        "ui": "83b381c77ae612cf",
+        "path": "/mqtt",
+        "icon": "router-network-wireless",
+        "layout": "grid",
+        "theme": "da2156bca1385b19",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "ae100d3bbcfe23a0",
+        "type": "ui-group",
+        "name": "Panel MQTT",
+        "page": "599dc45785c194e2",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "b38137b5b319d046",
+        "type": "ui-page",
+        "name": "🔁 Lab 3 - API REST GET",
+        "ui": "83b381c77ae612cf",
+        "path": "/api-rest-get",
+        "icon": "api",
+        "layout": "grid",
+        "theme": "theme_default",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 4,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "0b39135676c27c70",
+        "type": "ui-group",
+        "name": "Panel API REST GET",
+        "page": "b38137b5b319d046",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "e0213c74fac5e41f",
+        "type": "ui-page",
+        "name": "☁️ Lab 4 - API REST Clima",
+        "ui": "83b381c77ae612cf",
+        "path": "/api-rest-clima",
+        "icon": "weather-partly-cloudy",
+        "layout": "grid",
+        "theme": "theme_default",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 5,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "154cf11f1e1878c1",
+        "type": "ui-group",
+        "name": "WeatherStack",
+        "page": "e0213c74fac5e41f",
+        "width": 12,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "cef0c26102593672",
+        "type": "ui-group",
+        "name": "OpenWeather",
+        "page": "e0213c74fac5e41f",
+        "width": 12,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "6ad5e25a88494c87",
+        "type": "ui-page",
+        "name": "🏠 Inicio",
+        "ui": "83b381c77ae612cf",
+        "path": "/inicio",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "da2156bca1385b19",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 3
+            },
+            {
+                "name": "Tablet",
+                "px": 576,
+                "cols": 6
+            },
+            {
+                "name": "Small Desktop",
+                "px": 768,
+                "cols": 9
+            },
+            {
+                "name": "Desktop",
+                "px": 1024,
+                "cols": 12
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "page_post_d6ca64",
+        "type": "ui-page",
+        "name": "📨 Lab 5 - API REST POST",
+        "ui": "83b381c77ae612cf",
+        "path": "/api-rest-post",
+        "icon": "send",
+        "layout": "grid",
+        "theme": "da2156bca1385b19",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 3
+            },
+            {
+                "name": "Tablet",
+                "px": 576,
+                "cols": 6
+            },
+            {
+                "name": "Small Desktop",
+                "px": 768,
+                "cols": 9
+            },
+            {
+                "name": "Desktop",
+                "px": 1024,
+                "cols": 12
+            }
+        ],
+        "order": 6,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "grp_md_197cbbb15",
+        "type": "ui-group",
+        "name": "Resumen - Laboratorio 1",
+        "page": "44731425361cb96d",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "grp_nav_78721e5d",
+        "type": "ui-group",
+        "name": "Navegación",
+        "page": "44731425361cb96d",
+        "width": 12,
+        "height": 1,
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "grp_md_e0d461c77",
+        "type": "ui-group",
+        "name": "Resumen - Laboratorio 2",
+        "page": "599dc45785c194e2",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "grp_nav_6ededdf7",
+        "type": "ui-group",
+        "name": "Navegación",
+        "page": "599dc45785c194e2",
+        "width": 12,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "grp_md_d4263ebb5",
+        "type": "ui-group",
+        "name": "Resumen - Laboratorio 3",
+        "page": "b38137b5b319d046",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "grp_nav_f3abaf63",
+        "type": "ui-group",
+        "name": "Navegación",
+        "page": "b38137b5b319d046",
+        "width": 12,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "grp_md_f825130da",
+        "type": "ui-group",
+        "name": "Resumen - Laboratorio 4",
+        "page": "e0213c74fac5e41f",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "grp_nav_a0c09bce",
+        "type": "ui-group",
+        "name": "Navegación",
+        "page": "e0213c74fac5e41f",
+        "width": 12,
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "grp_md_bbaf88074",
+        "type": "ui-group",
+        "name": "Resumen - Laboratorio 5",
+        "page": "page_post_d6ca64",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "grp_nav_da80a0f6",
+        "type": "ui-group",
+        "name": "Navegación",
+        "page": "page_post_d6ca64",
+        "width": 12,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "1fe811151802e3b0",
+        "type": "ui-group",
+        "name": "Gráfico múltiple de sensores",
+        "page": "44731425361cb96d",
+        "width": 12,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "5df76090406d1e24",
+        "type": "ui-group",
+        "name": "Gauge lineal del sensor",
+        "page": "44731425361cb96d",
+        "width": 12,
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "7509d32238ef9003",
+        "type": "ui-group",
+        "name": "Bienvenida y enlaces",
+        "page": "6ad5e25a88494c87",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "inject_trigger",
+        "type": "inject",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_f5f82",
+        "name": "Generar Lectura",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "random_sensor"
+            ]
+        ]
+    },
+    {
+        "id": "temp_conversion",
+        "type": "function",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_f5f82",
+        "name": "Temperatura ×10",
+        "func": "var randomValue = msg.payload;\nmsg.payload = (randomValue * 10).toFixed(2);\n//msg.payload = Math.round(msg.payload * 100) / 100;\nmsg.topic = \"temperatura\";\nif (msg.payload > 50) {\n    msg.payload = msg.payload + \"\\n Alarma mayor a 50\";\n    return msg;\n} else {\n    msg.payload = msg.payload + \"\\n Temperatura normal\";\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 60,
+        "wires": [
+            [
+                "temp_debug"
+            ]
+        ]
+    },
+    {
+        "id": "hum_conversion",
+        "type": "function",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_f5f82",
+        "name": "Humedad (×3)+2.5",
+        "func": "var randomValue = msg.payload;\nmsg.payload = ((randomValue * 3) + 2.5).toFixed(2);\n//msg.payload = Math.round(msg.payload * 100) / 100;\nmsg.topic = \"humedad\";\nif (msg.payload > 90) {\n    msg.payload = msg.payload + \"\\n Alarma mayor a 90\";\n    return msg;\n} else {\n    msg.payload = msg.payload + \"\\n Humedad Normal\";\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 160,
+        "wires": [
+            [
+                "hum_debug"
+            ]
+        ]
+    },
+    {
+        "id": "temp_debug",
+        "type": "debug",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_f5f82",
+        "name": "Debug Temperatura",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "hum_debug",
+        "type": "debug",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_f5f82",
+        "name": "Debug Humedad",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "comentario",
+        "type": "comment",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_f5f82",
+        "name": "Ejercicio 1: Sensor con alarmas (Function)",
+        "info": "1. Inject genera evento\n2. Random genera valor 0-10\n3. Temperatura = valor × 10\n4. Humedad = (valor × 3) + 2.5\n5. Alarmas cuando Temp>50 o Hum>90",
+        "x": 200,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "random_sensor",
+        "type": "random",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_f5f82",
+        "name": "Sensor Aleatorio",
+        "low": "0",
+        "high": "10",
+        "property": "payload",
+        "x": 420,
+        "y": 120,
+        "wires": [
+            [
+                "temp_conversion",
+                "hum_conversion"
+            ]
+        ]
+    },
+    {
+        "id": "47c49401917e921d",
+        "type": "inject",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_03a2c",
+        "name": "Generar Lectura",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 140,
+        "y": 520,
+        "wires": [
+            [
+                "2bd76d358a4211ba"
+            ]
+        ]
+    },
+    {
+        "id": "2bd76d358a4211ba",
+        "type": "random",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_03a2c",
+        "name": "Sensor Aleatorio",
+        "low": "0",
+        "high": "10",
+        "inte": "true",
+        "property": "payload",
+        "x": 340,
+        "y": 520,
+        "wires": [
+            [
+                "38c5ca52b1f5a814"
+            ]
+        ]
+    },
+    {
+        "id": "38c5ca52b1f5a814",
+        "type": "change",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_03a2c",
+        "name": "Separar Temp y Hum",
+        "rules": [
+            {
+                "t": "set",
+                "p": "temp_raw",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "hum_raw",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 520,
+        "wires": [
+            [
+                "20bc7bc546f9c52c",
+                "e84f31cf410406e8"
+            ]
+        ]
+    },
+    {
+        "id": "20bc7bc546f9c52c",
+        "type": "change",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_03a2c",
+        "name": "Temp = raw × 10",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$round(temp_raw * 10, 2) ",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "temperatura",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 710,
+        "y": 380,
+        "wires": [
+            [
+                "aba2dfc2ac6fd615"
+            ]
+        ]
+    },
+    {
+        "id": "aba2dfc2ac6fd615",
+        "type": "switch",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_03a2c",
+        "name": "¿Temp > 50?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "50",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 890,
+        "y": 380,
+        "wires": [
+            [
+                "e57b7e948d20e10c"
+            ],
+            [
+                "e8c5229e2b6a711b"
+            ]
+        ]
+    },
+    {
+        "id": "e57b7e948d20e10c",
+        "type": "change",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_03a2c",
+        "name": "Añadir Alarma Temp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload & \"\\n Alarma mayor a 50\"",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1080,
+        "y": 280,
+        "wires": [
+            [
+                "38011359ea77d6bd"
+            ]
+        ]
+    },
+    {
+        "id": "e8c5229e2b6a711b",
+        "type": "change",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_03a2c",
+        "name": "Añadir Normal Temp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload & \"\\n Temperatura normal\"",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1080,
+        "y": 480,
+        "wires": [
+            [
+                "38011359ea77d6bd"
+            ]
+        ]
+    },
+    {
+        "id": "38011359ea77d6bd",
+        "type": "debug",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_03a2c",
+        "name": "Debug Temperatura",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "e84f31cf410406e8",
+        "type": "change",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_03a2c",
+        "name": "Hum = (raw × 3) + 2.5",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$round((hum_raw * 3) + 2.5, 2)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "humedad",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 640,
+        "wires": [
+            [
+                "5288ead6f8119113"
+            ]
+        ]
+    },
+    {
+        "id": "5288ead6f8119113",
+        "type": "switch",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_03a2c",
+        "name": "¿Hum > 90?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "90",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 890,
+        "y": 640,
+        "wires": [
+            [
+                "abe0920e55353b4f"
+            ],
+            [
+                "0ca4cedd9710fe56"
+            ]
+        ]
+    },
+    {
+        "id": "abe0920e55353b4f",
+        "type": "change",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_03a2c",
+        "name": "Añadir Alarma Hum",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload & \"\\n Alarma mayor a 90\"",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1090,
+        "y": 560,
+        "wires": [
+            [
+                "f75f63161108e24d"
+            ]
+        ]
+    },
+    {
+        "id": "0ca4cedd9710fe56",
+        "type": "change",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_03a2c",
+        "name": "Añadir Normal Hum",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload & \"\\n Humedad Normal\"",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1090,
+        "y": 720,
+        "wires": [
+            [
+                "f75f63161108e24d"
+            ]
+        ]
+    },
+    {
+        "id": "f75f63161108e24d",
+        "type": "debug",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_03a2c",
+        "name": "Debug Humedad",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "de92390cfb25b0b0",
+        "type": "comment",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_03a2c",
+        "name": "Ejercicio 1: Sensor con alarmas (Change + Switch)",
+        "info": "1. Inject genera evento\n2. Random genera valor 0-10\n3. Temperatura = valor × 10\n4. Humedad = (valor × 3) + 2.5\n5. Alarmas cuando Temp>50 o Hum>90\n\n**Nodos usados:**\n- Random: valor aleatorio\n- Change: cálculos y concatenación\n- Switch: condiciones de alarma\n- Debug: salida",
+        "x": 230,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "f2df23cbc6ef9863",
+        "type": "comment",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_ca255",
+        "name": "Ejercicio 3: Sensor LED",
+        "info": "",
+        "x": 140,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "3e07d0caea206686",
+        "type": "switch",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_ca255",
+        "name": "Comparar Alarma",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "50",
+                "vt": "num"
+            },
+            {
+                "t": "lt",
+                "v": "15",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 900,
+        "wires": [
+            [
+                "bc01b6aaf24e113b"
+            ],
+            [
+                "5a90e79329d497da"
+            ]
+        ]
+    },
+    {
+        "id": "bc01b6aaf24e113b",
+        "type": "change",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_ca255",
+        "name": "verde = true",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 860,
+        "wires": [
+            [
+                "22c702d9df40c8c2"
+            ]
+        ]
+    },
+    {
+        "id": "5a90e79329d497da",
+        "type": "change",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_ca255",
+        "name": "rojo = false",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 940,
+        "wires": [
+            [
+                "22c702d9df40c8c2"
+            ]
+        ]
+    },
+    {
+        "id": "22c702d9df40c8c2",
+        "type": "ui-led",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_ca255",
+        "name": "",
+        "group": "36b6bba306241b44",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "states": [
+            {
+                "value": "false",
+                "valueType": "bool",
+                "color": "#ff0000"
+            },
+            {
+                "value": "true",
+                "valueType": "bool",
+                "color": "#00ff00"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showBorder": true,
+        "showGlow": true,
+        "x": 890,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "a2fd85b4290b6ab1",
+        "type": "random",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_ca255",
+        "name": "Sensor Aleatorio",
+        "low": "5",
+        "high": "60",
+        "inte": "true",
+        "property": "payload",
+        "x": 300,
+        "y": 900,
+        "wires": [
+            [
+                "3e07d0caea206686"
+            ]
+        ]
+    },
+    {
+        "id": "fdaf10c5557bf325",
+        "type": "inject",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_ca255",
+        "name": "",
+        "props": [],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 140,
+        "y": 900,
+        "wires": [
+            [
+                "a2fd85b4290b6ab1"
+            ]
+        ]
+    },
+    {
+        "id": "6d0a50861ed5a07d",
+        "type": "inject",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_c5c4b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "x",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 1160,
+        "wires": [
+            [
+                "ce0abd0310d7e846"
+            ]
+        ]
+    },
+    {
+        "id": "388c2382b94f48c6",
+        "type": "inject",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_c5c4b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "y",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 1240,
+        "wires": [
+            [
+                "5ad4737434775750"
+            ]
+        ]
+    },
+    {
+        "id": "adce740d79a7b584",
+        "type": "inject",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_c5c4b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "z",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 1320,
+        "wires": [
+            [
+                "5d612d37fd94577c"
+            ]
+        ]
+    },
+    {
+        "id": "7f259cff9f13d957",
+        "type": "comment",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_c5c4b",
+        "name": "Ejercicio 4: Chart Multiple",
+        "info": "",
+        "x": 150,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "ce0abd0310d7e846",
+        "type": "random",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_c5c4b",
+        "name": "X",
+        "low": "5",
+        "high": "100",
+        "inte": "true",
+        "property": "payload",
+        "x": 350,
+        "y": 1160,
+        "wires": [
+            [
+                "50620f0c7ee92ebd"
+            ]
+        ]
+    },
+    {
+        "id": "5ad4737434775750",
+        "type": "random",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_c5c4b",
+        "name": "Y",
+        "low": "5",
+        "high": "100",
+        "inte": "true",
+        "property": "payload",
+        "x": 350,
+        "y": 1240,
+        "wires": [
+            [
+                "50620f0c7ee92ebd"
+            ]
+        ]
+    },
+    {
+        "id": "5d612d37fd94577c",
+        "type": "random",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_c5c4b",
+        "name": "Z",
+        "low": "5",
+        "high": "100",
+        "inte": "true",
+        "property": "payload",
+        "x": 350,
+        "y": 1320,
+        "wires": [
+            [
+                "50620f0c7ee92ebd"
+            ]
+        ]
+    },
+    {
+        "id": "70ac34c6d9985199",
+        "type": "inject",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_c5c4b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "x",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 1420,
+        "wires": [
+            [
+                "7363475cd5b3b580"
+            ]
+        ]
+    },
+    {
+        "id": "7363475cd5b3b580",
+        "type": "random",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_c5c4b",
+        "name": "X",
+        "low": "5",
+        "high": "100",
+        "inte": "true",
+        "property": "payload",
+        "x": 350,
+        "y": 1420,
+        "wires": [
+            [
+                "144a95285cb4082f"
+            ]
+        ]
+    },
+    {
+        "id": "50620f0c7ee92ebd",
+        "type": "ui-chart",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_c5c4b",
+        "group": "1fe811151802e3b0",
+        "name": "",
+        "label": "Chart múltiple X / Y / Z",
+        "order": 1,
+        "chartType": "area",
+        "category": "[]",
+        "categoryType": "json",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "12",
+        "height": "6",
+        "className": "",
+        "interpolation": "linear",
+        "x": 690,
+        "y": 1220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "144a95285cb4082f",
+        "type": "ui-gauge-linear",
+        "z": "lab1_sensores_final",
+        "g": "grp_editor_c5c4b",
+        "name": "",
+        "group": "5df76090406d1e24",
+        "order": 1,
+        "width": "12",
+        "height": "4",
+        "min": 0,
+        "max": "100",
+        "ticks": [],
+        "colors": [
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(0, 227, 0)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 169, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 76, 22)"
+            },
+            {
+                "size": 100,
+                "color": "rgb(255, 76, 22)"
+            }
+        ],
+        "zeroCrossColors": [
+            "#ff4c16",
+            "#00e300"
+        ],
+        "mode": "default",
+        "bar": "segmented",
+        "minLabel": "",
+        "maxLabel": "",
+        "label": "Gauge Linear",
+        "icon": "",
+        "unit": "°C",
+        "dim": 0.2,
+        "property": "payload",
+        "decimals": 2,
+        "zeros": true,
+        "myclass": "",
+        "x": 610,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "8a11bf79b2ebfae1",
+        "type": "mqtt in",
+        "z": "e5358fb4d49d660d",
+        "g": "grp_editor_14c18",
+        "name": "",
+        "topic": "UTMACH/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "94242a7ab801cb90",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 140,
+        "wires": [
+            [
+                "5766fcc8263a361d",
+                "e1931bbac71750f3",
+                "12bf656a4a3c0fc4",
+                "9b9fe0e9ed39ba6b"
+            ]
+        ]
+    },
+    {
+        "id": "5766fcc8263a361d",
+        "type": "debug",
+        "z": "e5358fb4d49d660d",
+        "g": "grp_editor_14c18",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "e1931bbac71750f3",
+        "type": "ui-gauge",
+        "z": "e5358fb4d49d660d",
+        "g": "grp_editor_14c18",
+        "name": "temp",
+        "group": "ae100d3bbcfe23a0",
+        "order": 3,
+        "value": "$round(payload.temperatura,2)",
+        "valueType": "jsonata",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Temperatura",
+        "alwaysShowTitle": true,
+        "floatingTitlePosition": "top-left",
+        "units": "°C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#00b3ff",
+                "text": "Hipotermia",
+                "textType": "label"
+            },
+            {
+                "from": "35",
+                "color": "#00ff2a",
+                "text": "Normal",
+                "textType": "label"
+            },
+            {
+                "from": "38",
+                "color": "#fff700",
+                "text": "Fiebre",
+                "textType": "label"
+            },
+            {
+                "from": "45",
+                "color": "#ea5353",
+                "text": "Crítico",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "50",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 470,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "12bf656a4a3c0fc4",
+        "type": "ui-gauge",
+        "z": "e5358fb4d49d660d",
+        "g": "grp_editor_14c18",
+        "name": "hum",
+        "group": "ae100d3bbcfe23a0",
+        "order": 2,
+        "value": "payload.humedad",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Humedad",
+        "alwaysShowTitle": true,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "Baja",
+                "textType": "label"
+            },
+            {
+                "from": "30",
+                "color": "#00b3ff",
+                "text": "Normal",
+                "textType": "label"
+            },
+            {
+                "from": "70",
+                "color": "#ffc800",
+                "text": "Alta",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ea5353",
+                "text": "Crítica",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 470,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b9fe0e9ed39ba6b",
+        "type": "switch",
+        "z": "e5358fb4d49d660d",
+        "g": "grp_editor_14c18",
+        "name": "Clasificar Temperatura",
+        "property": "payload.temperatura",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "35",
+                "vt": "num"
+            },
+            {
+                "t": "btwn",
+                "v": "35",
+                "vt": "num",
+                "v2": "37.9",
+                "v2t": "num"
+            },
+            {
+                "t": "btwn",
+                "v": "38",
+                "vt": "num",
+                "v2": "44.9",
+                "v2t": "num"
+            },
+            {
+                "t": "gte",
+                "v": "45",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 290,
+        "y": 320,
+        "wires": [
+            [
+                "821c9fc48ff761db"
+            ],
+            [
+                "a9ba2d0baa223935"
+            ],
+            [
+                "44a544b35cb9415c"
+            ],
+            [
+                "b513b84ee0b82bda"
+            ]
+        ]
+    },
+    {
+        "id": "821c9fc48ff761db",
+        "type": "change",
+        "z": "e5358fb4d49d660d",
+        "g": "grp_editor_14c18",
+        "name": "Set Hipotermia",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "❄️ HIPOTERMIA ❄️",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "ui_update.color",
+                "pt": "msg",
+                "to": "blue",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 280,
+        "wires": [
+            [
+                "2730af46b881e051"
+            ]
+        ]
+    },
+    {
+        "id": "a9ba2d0baa223935",
+        "type": "change",
+        "z": "e5358fb4d49d660d",
+        "g": "grp_editor_14c18",
+        "name": "Set Normal",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "✅ NORMAL",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "ui_update.color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 320,
+        "wires": [
+            [
+                "2730af46b881e051"
+            ]
+        ]
+    },
+    {
+        "id": "44a544b35cb9415c",
+        "type": "change",
+        "z": "e5358fb4d49d660d",
+        "g": "grp_editor_14c18",
+        "name": "Set Fiebre",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "🌡️ FIEBRE",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "ui_update.color",
+                "pt": "msg",
+                "to": "yellow",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 360,
+        "wires": [
+            [
+                "2730af46b881e051"
+            ]
+        ]
+    },
+    {
+        "id": "b513b84ee0b82bda",
+        "type": "change",
+        "z": "e5358fb4d49d660d",
+        "g": "grp_editor_14c18",
+        "name": "Set Crítico",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "⚠️ MURIENDO ⚠️",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "ui_update.color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 400,
+        "wires": [
+            [
+                "2730af46b881e051"
+            ]
+        ]
+    },
+    {
+        "id": "2730af46b881e051",
+        "type": "ui-text",
+        "z": "e5358fb4d49d660d",
+        "g": "grp_editor_14c18",
+        "group": "ae100d3bbcfe23a0",
+        "order": 1,
+        "width": 6,
+        "height": 2,
+        "name": "Estado Temperatura",
+        "label": "Estado actual",
+        "format": "{{msg.estado}}",
+        "layout": "row-center",
+        "style": true,
+        "font": "Times New Roman,Times,serif",
+        "fontSize": "24",
+        "color": "#db0000",
+        "wrapText": false,
+        "className": "ui_update.color",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 790,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "5087d4e8157fbf8a",
+        "type": "change",
+        "z": "e5358fb4d49d660d",
+        "g": "grp_editor_49b66",
+        "name": "JSON",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\t    \"temperatura\":msg.temperatura,\t    \"humedad\": msg.humedad\t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 560,
+        "wires": [
+            [
+                "8b300eb33a530cdf",
+                "a0edde539f2b7a5a"
+            ]
+        ]
+    },
+    {
+        "id": "8b300eb33a530cdf",
+        "type": "debug",
+        "z": "e5358fb4d49d660d",
+        "g": "grp_editor_49b66",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "2f40e6a5aad622f0",
+        "type": "random",
+        "z": "e5358fb4d49d660d",
+        "g": "grp_editor_49b66",
+        "name": "",
+        "low": 1,
+        "high": "100",
+        "inte": "true",
+        "property": "payload.temperatura",
+        "x": 440,
+        "y": 560,
+        "wires": [
+            [
+                "dca2360c28fe8fa6"
+            ]
+        ]
+    },
+    {
+        "id": "8bbc9f0fe578b099",
+        "type": "inject",
+        "z": "e5358fb4d49d660d",
+        "g": "grp_editor_49b66",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "UTMACH/sensores",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 560,
+        "wires": [
+            [
+                "2f40e6a5aad622f0"
+            ]
+        ]
+    },
+    {
+        "id": "a0edde539f2b7a5a",
+        "type": "mqtt out",
+        "z": "e5358fb4d49d660d",
+        "g": "grp_editor_49b66",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "94242a7ab801cb90",
+        "x": 950,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "dca2360c28fe8fa6",
+        "type": "random",
+        "z": "e5358fb4d49d660d",
+        "g": "grp_editor_49b66",
+        "name": "",
+        "low": 1,
+        "high": "50",
+        "inte": "true",
+        "property": "payload.humedad",
+        "x": 600,
+        "y": 560,
+        "wires": [
+            [
+                "5087d4e8157fbf8a"
+            ]
+        ]
+    },
+    {
+        "id": "44e8893543b16e96",
+        "type": "comment",
+        "z": "e5358fb4d49d660d",
+        "g": "grp_editor_14c18",
+        "name": "SUB",
+        "info": "",
+        "x": 90,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "d533817a6b24809c",
+        "type": "comment",
+        "z": "e5358fb4d49d660d",
+        "g": "grp_editor_49b66",
+        "name": "PUB",
+        "info": "",
+        "x": 950,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "inject_cada_minuto",
+        "type": "inject",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_cca42",
+        "name": "Cada 1 minuto",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 100,
+        "wires": [
+            [
+                "1cdb412674126add"
+            ]
+        ]
+    },
+    {
+        "id": "debug_respuesta",
+        "type": "debug",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_cca42",
+        "name": "Respuesta del servidor",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "http_request",
+        "type": "http request",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_cca42",
+        "name": "Enviar a servidor",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:1880/sensores/{{temp}}/{{hum}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 830,
+        "y": 180,
+        "wires": [
+            [
+                "debug_respuesta"
+            ]
+        ]
+    },
+    {
+        "id": "38eeb6862e4f4686",
+        "type": "random",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_cca42",
+        "name": "Aleatorio Humedad",
+        "low": "0",
+        "high": "100",
+        "inte": "false",
+        "property": "hum",
+        "x": 370,
+        "y": 180,
+        "wires": [
+            [
+                "01918190cba9db5a",
+                "605d88dd88c11645",
+                "b04b58bdca5fdc75"
+            ]
+        ]
+    },
+    {
+        "id": "1cdb412674126add",
+        "type": "random",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_cca42",
+        "name": "Aleatorio Temperatura",
+        "low": "0",
+        "high": "50",
+        "inte": "false",
+        "property": "temp",
+        "x": 380,
+        "y": 100,
+        "wires": [
+            [
+                "38eeb6862e4f4686"
+            ]
+        ]
+    },
+    {
+        "id": "01918190cba9db5a",
+        "type": "debug",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_cca42",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "605d88dd88c11645",
+        "type": "change",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_cca42",
+        "name": "Separar Temp y Hum",
+        "rules": [
+            {
+                "t": "set",
+                "p": "temp",
+                "pt": "msg",
+                "to": "temp",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "hum",
+                "pt": "msg",
+                "to": "hum",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 160,
+        "wires": [
+            [
+                "http_request"
+            ]
+        ]
+    },
+    {
+        "id": "1d1803015460c8bd",
+        "type": "http in",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_281f2",
+        "name": "",
+        "url": "sensores/:temp/:hum",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 580,
+        "wires": [
+            [
+                "65dfa8f1edc39891",
+                "e5d82345ace47861",
+                "d1334a5256cd10a0",
+                "8e32a944c802adca"
+            ]
+        ]
+    },
+    {
+        "id": "a7487aa0adf61137",
+        "type": "http response",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_281f2",
+        "name": "OK",
+        "statusCode": "200",
+        "headers": {},
+        "x": 550,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "4c43390c99019ef3",
+        "type": "ui-gauge",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_281f2",
+        "name": "temp",
+        "group": "0b39135676c27c70",
+        "order": 3,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Temperatura",
+        "alwaysShowTitle": true,
+        "floatingTitlePosition": "top-left",
+        "units": "°C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#00b3ff",
+                "text": "Hipotermia",
+                "textType": "label"
+            },
+            {
+                "from": "35",
+                "color": "#00ff2a",
+                "text": "Normal",
+                "textType": "label"
+            },
+            {
+                "from": "38",
+                "color": "#fff700",
+                "text": "Fiebre",
+                "textType": "label"
+            },
+            {
+                "from": "45",
+                "color": "#ea5353",
+                "text": "Crítico",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "50",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 750,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6e243d533deb096c",
+        "type": "ui-gauge",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_281f2",
+        "name": "hum",
+        "group": "0b39135676c27c70",
+        "order": 2,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Humedad",
+        "alwaysShowTitle": true,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "Baja",
+                "textType": "label"
+            },
+            {
+                "from": "30",
+                "color": "#00b3ff",
+                "text": "Normal",
+                "textType": "label"
+            },
+            {
+                "from": "70",
+                "color": "#ffc800",
+                "text": "Alta",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ea5353",
+                "text": "Crítica",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 750,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "65dfa8f1edc39891",
+        "type": "debug",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_281f2",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "e5d82345ace47861",
+        "type": "change",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_281f2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$round($number(msg.req.params.temp), 2)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 580,
+        "wires": [
+            [
+                "4c43390c99019ef3"
+            ]
+        ]
+    },
+    {
+        "id": "d1334a5256cd10a0",
+        "type": "change",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_281f2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$round($number(msg.req.params.hum),2)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 620,
+        "wires": [
+            [
+                "6e243d533deb096c",
+                "86b059efadb29095"
+            ]
+        ]
+    },
+    {
+        "id": "86b059efadb29095",
+        "type": "debug",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_281f2",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "8e32a944c802adca",
+        "type": "template",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_281f2",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<title> Ejemplo Hola Mundo</title>\n<body>\n<h1> Hola Mundo {msg.req.params.temp}</h1>\n</br>\n<p1>\n    Me llamo ANDY\n</p1>\n</body>\n</html>",
+        "output": "str",
+        "x": 400,
+        "y": 500,
+        "wires": [
+            [
+                "a7487aa0adf61137"
+            ]
+        ]
+    },
+    {
+        "id": "de939736bdef700c",
+        "type": "comment",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_cca42",
+        "name": "Client",
+        "info": "",
+        "x": 112,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "4f1f4d131803c0ab",
+        "type": "comment",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_281f2",
+        "name": "Server",
+        "info": "",
+        "x": 110,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "b04b58bdca5fdc75",
+        "type": "switch",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_cca42",
+        "name": "Clasificar Temperatura",
+        "property": "temp",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "35",
+                "vt": "num"
+            },
+            {
+                "t": "btwn",
+                "v": "35",
+                "vt": "num",
+                "v2": "37.9",
+                "v2t": "num"
+            },
+            {
+                "t": "btwn",
+                "v": "38",
+                "vt": "num",
+                "v2": "44.9",
+                "v2t": "num"
+            },
+            {
+                "t": "gte",
+                "v": "45",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 610,
+        "y": 300,
+        "wires": [
+            [
+                "9452044c1ea418f2"
+            ],
+            [
+                "45b34b32853e064f"
+            ],
+            [
+                "490dbc5cc44985a2"
+            ],
+            [
+                "f2b923ac8ddae0dd"
+            ]
+        ]
+    },
+    {
+        "id": "9452044c1ea418f2",
+        "type": "change",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_cca42",
+        "name": "Set Hipotermia",
+        "rules": [
+            {
+                "t": "set",
+                "p": "temp",
+                "pt": "msg",
+                "to": "❄️ HIPOTERMIA ❄️",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "ui_update.color",
+                "pt": "msg",
+                "to": "blue",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 260,
+        "wires": [
+            [
+                "befd2e1b8d9e9232"
+            ]
+        ]
+    },
+    {
+        "id": "45b34b32853e064f",
+        "type": "change",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_cca42",
+        "name": "Set Normal",
+        "rules": [
+            {
+                "t": "set",
+                "p": "temp",
+                "pt": "msg",
+                "to": "✅ NORMAL",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "ui_update.color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 300,
+        "wires": [
+            [
+                "befd2e1b8d9e9232"
+            ]
+        ]
+    },
+    {
+        "id": "490dbc5cc44985a2",
+        "type": "change",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_cca42",
+        "name": "Set Fiebre",
+        "rules": [
+            {
+                "t": "set",
+                "p": "temp",
+                "pt": "msg",
+                "to": "🌡️ FIEBRE",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "ui_update.color",
+                "pt": "msg",
+                "to": "yellow",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 340,
+        "wires": [
+            [
+                "befd2e1b8d9e9232"
+            ]
+        ]
+    },
+    {
+        "id": "f2b923ac8ddae0dd",
+        "type": "change",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_cca42",
+        "name": "Set Crítico",
+        "rules": [
+            {
+                "t": "set",
+                "p": "temp",
+                "pt": "msg",
+                "to": "⚠️ MURIENDO ⚠️",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "ui_update.color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 380,
+        "wires": [
+            [
+                "befd2e1b8d9e9232"
+            ]
+        ]
+    },
+    {
+        "id": "befd2e1b8d9e9232",
+        "type": "ui-text",
+        "z": "9ff678e3502a1c0c",
+        "g": "grp_editor_cca42",
+        "group": "0b39135676c27c70",
+        "order": 1,
+        "width": 6,
+        "height": 2,
+        "name": "Estado Temperatura",
+        "label": "Estado actual",
+        "format": "{{msg.estado}}",
+        "layout": "row-center",
+        "style": true,
+        "font": "Times New Roman,Times,serif",
+        "fontSize": "24",
+        "color": "#db0000",
+        "wrapText": false,
+        "className": "ui_update.color",
+        "value": "temp",
+        "valueType": "msg",
+        "x": 1110,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "eaf1d130f0c4b46e",
+        "type": "inject",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_e893e",
+        "name": "Inyect",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 100,
+        "wires": [
+            [
+                "5f81d1b36eaac9a7"
+            ]
+        ]
+    },
+    {
+        "id": "b7655f1db9260177",
+        "type": "debug",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_e893e",
+        "name": "Respuesta del servidor",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "5f81d1b36eaac9a7",
+        "type": "http request",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_e893e",
+        "name": "Enviar a servidor",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://api.weatherstack.com/current?access_key=efcae8c464540d82c5168fe393b93eb0&query=Quito",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 410,
+        "y": 100,
+        "wires": [
+            [
+                "b7655f1db9260177",
+                "b4df4ab28a26b663",
+                "35515f13da63c697",
+                "01fdf23ad98a734d",
+                "ed83cda81b801e2f"
+            ]
+        ]
+    },
+    {
+        "id": "09013078dd1a9e3f",
+        "type": "comment",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_e893e",
+        "name": "Client - Watherstack",
+        "info": "",
+        "x": 130,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "173b59eb5d35cac0",
+        "type": "ui-gauge",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_e893e",
+        "name": "temp",
+        "group": "154cf11f1e1878c1",
+        "order": 4,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Temperatura",
+        "alwaysShowTitle": true,
+        "floatingTitlePosition": "top-left",
+        "units": "°C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#00b3ff",
+                "text": "Hipotermia",
+                "textType": "label"
+            },
+            {
+                "from": "35",
+                "color": "#00ff2a",
+                "text": "Normal",
+                "textType": "label"
+            },
+            {
+                "from": "38",
+                "color": "#fff700",
+                "text": "Fiebre",
+                "textType": "label"
+            },
+            {
+                "from": "45",
+                "color": "#ea5353",
+                "text": "Crítico",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "50",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1070,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "54170daf92ff55bd",
+        "type": "ui-gauge",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_e893e",
+        "name": "hum",
+        "group": "154cf11f1e1878c1",
+        "order": 5,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Humedad",
+        "alwaysShowTitle": true,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "Baja",
+                "textType": "label"
+            },
+            {
+                "from": "30",
+                "color": "#00b3ff",
+                "text": "Normal",
+                "textType": "label"
+            },
+            {
+                "from": "70",
+                "color": "#ffc800",
+                "text": "Alta",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ea5353",
+                "text": "Crítica",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1070,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b4df4ab28a26b663",
+        "type": "change",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_e893e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$round($number(msg.payload.current.temperature), 2)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 160,
+        "wires": [
+            [
+                "173b59eb5d35cac0"
+            ]
+        ]
+    },
+    {
+        "id": "35515f13da63c697",
+        "type": "change",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_e893e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$round($number(msg.payload.current.humidity),2)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 220,
+        "wires": [
+            [
+                "54170daf92ff55bd"
+            ]
+        ]
+    },
+    {
+        "id": "01fdf23ad98a734d",
+        "type": "change",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_e893e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "msg.payload.request.query",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "ui_update.color",
+                "pt": "msg",
+                "to": "blue",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 800,
+        "y": 280,
+        "wires": [
+            [
+                "e8cb13e2053e85ef"
+            ]
+        ]
+    },
+    {
+        "id": "e8cb13e2053e85ef",
+        "type": "ui-text",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_e893e",
+        "group": "154cf11f1e1878c1",
+        "order": 3,
+        "width": 6,
+        "height": 2,
+        "name": "Ubicacion",
+        "label": "",
+        "format": "{{msg.estado}}",
+        "layout": "row-center",
+        "style": true,
+        "font": "Times New Roman,Times,serif",
+        "fontSize": "24",
+        "color": "#db0000",
+        "wrapText": false,
+        "className": "ui_update.color",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1080,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "82f8805146afbf9b",
+        "type": "inject",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_af676",
+        "name": "Inyect",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 540,
+        "wires": [
+            [
+                "3ecd507b51a074f1"
+            ]
+        ]
+    },
+    {
+        "id": "dd2609ee8dcfcced",
+        "type": "debug",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_af676",
+        "name": "Respuesta del servidor",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "3ecd507b51a074f1",
+        "type": "http request",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_af676",
+        "name": "Enviar a servidor",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://api.openweathermap.org/data/2.5/weather?q=Quito,ec&APPID=095c6094db11dbb717c802d7a2a52c95",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 430,
+        "y": 540,
+        "wires": [
+            [
+                "dd2609ee8dcfcced",
+                "d821af2a582d0ac9",
+                "2a0499191fb2794f",
+                "2edd740d022aaced"
+            ]
+        ]
+    },
+    {
+        "id": "216573e200ef4a94",
+        "type": "comment",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_af676",
+        "name": "Client - OpenWather",
+        "info": "",
+        "x": 130,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "8f910d5cc1aad23b",
+        "type": "ui-gauge",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_af676",
+        "name": "temp",
+        "group": "cef0c26102593672",
+        "order": 2,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Temperatura",
+        "alwaysShowTitle": true,
+        "floatingTitlePosition": "top-left",
+        "units": "°C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#00b3ff",
+                "text": "Hipotermia",
+                "textType": "label"
+            },
+            {
+                "from": "35",
+                "color": "#00ff2a",
+                "text": "Normal",
+                "textType": "label"
+            },
+            {
+                "from": "38",
+                "color": "#fff700",
+                "text": "Fiebre",
+                "textType": "label"
+            },
+            {
+                "from": "45",
+                "color": "#ea5353",
+                "text": "Crítico",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "50",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1070,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2d708b4737870410",
+        "type": "ui-gauge",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_af676",
+        "name": "hum",
+        "group": "cef0c26102593672",
+        "order": 3,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Humedad",
+        "alwaysShowTitle": true,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "Baja",
+                "textType": "label"
+            },
+            {
+                "from": "30",
+                "color": "#00b3ff",
+                "text": "Normal",
+                "textType": "label"
+            },
+            {
+                "from": "70",
+                "color": "#ffc800",
+                "text": "Alta",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ea5353",
+                "text": "Crítica",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1070,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d821af2a582d0ac9",
+        "type": "change",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_af676",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$round($number(msg.payload.main.temp) - 273.15, 2)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 620,
+        "wires": [
+            [
+                "8f910d5cc1aad23b"
+            ]
+        ]
+    },
+    {
+        "id": "2a0499191fb2794f",
+        "type": "change",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_af676",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$round($number(msg.payload.main.humidity),2)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 680,
+        "wires": [
+            [
+                "2d708b4737870410"
+            ]
+        ]
+    },
+    {
+        "id": "2edd740d022aaced",
+        "type": "change",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_af676",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "msg.payload.name",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "ui_update.color",
+                "pt": "msg",
+                "to": "blue",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 800,
+        "y": 740,
+        "wires": [
+            [
+                "df970f714e51e73d"
+            ]
+        ]
+    },
+    {
+        "id": "df970f714e51e73d",
+        "type": "ui-text",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_af676",
+        "group": "cef0c26102593672",
+        "order": 1,
+        "width": 6,
+        "height": 2,
+        "name": "Ubicacion",
+        "label": "",
+        "format": "{{msg.estado}}",
+        "layout": "row-center",
+        "style": true,
+        "font": "Times New Roman,Times,serif",
+        "fontSize": "24",
+        "color": "#db0000",
+        "wrapText": false,
+        "className": "ui_update.color",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1000,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "ed83cda81b801e2f",
+        "type": "switch",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_e893e",
+        "name": "",
+        "property": "payload.current.is_day",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "yes",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "no",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 630,
+        "y": 360,
+        "wires": [
+            [
+                "2622b6dfaffe639a"
+            ],
+            [
+                "ff9330c515a0790d"
+            ]
+        ]
+    },
+    {
+        "id": "2622b6dfaffe639a",
+        "type": "change",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_e893e",
+        "name": "LED ON",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 340,
+        "wires": [
+            [
+                "8a2965d31819ebb1"
+            ]
+        ]
+    },
+    {
+        "id": "ff9330c515a0790d",
+        "type": "change",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_e893e",
+        "name": "LED OFF",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 400,
+        "wires": [
+            [
+                "8a2965d31819ebb1"
+            ]
+        ]
+    },
+    {
+        "id": "8a2965d31819ebb1",
+        "type": "ui-led",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_e893e",
+        "name": "LED",
+        "group": "154cf11f1e1878c1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Es de día",
+        "labelPlacement": "left",
+        "labelAlignment": "flex-start",
+        "states": [
+            {
+                "value": "false",
+                "valueType": "bool",
+                "color": "#000000"
+            },
+            {
+                "value": "true",
+                "valueType": "bool",
+                "color": "#fbff00"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showBorder": true,
+        "showGlow": true,
+        "x": 1070,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "15e107fa1cbd599c",
+        "type": "http request",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_e893e",
+        "name": "Actualizar ciudad",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://api.weatherstack.com/current?access_key=efcae8c464540d82c5168fe393b93eb0&query={{payload}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 200,
+        "wires": [
+            [
+                "ed83cda81b801e2f",
+                "01fdf23ad98a734d",
+                "35515f13da63c697",
+                "b4df4ab28a26b663",
+                "b7655f1db9260177"
+            ]
+        ]
+    },
+    {
+        "id": "93fadc95d6ecf8a7",
+        "type": "ui-text-input",
+        "z": "682afd4f040b885f",
+        "g": "grp_editor_e893e",
+        "group": "154cf11f1e1878c1",
+        "name": "",
+        "label": "Ciudad",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "topic": "topic",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 120,
+        "y": 200,
+        "wires": [
+            [
+                "15e107fa1cbd599c"
+            ]
+        ]
+    },
+    {
+        "id": "1db30be662411ed0",
+        "type": "inject",
+        "z": "f34c405573e2813b",
+        "g": "grp_editor_c1a45",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"temp\":23.5,\"hum\":80.3}",
+        "payloadType": "json",
+        "x": 70,
+        "y": 100,
+        "wires": [
+            [
+                "f3f4c146ac66b395"
+            ]
+        ]
+    },
+    {
+        "id": "f3f4c146ac66b395",
+        "type": "http request",
+        "z": "f34c405573e2813b",
+        "g": "grp_editor_c1a45",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "127.0.0.1:1880/sensorpost",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 330,
+        "y": 100,
+        "wires": [
+            [
+                "74dbbdc1c9f405cd"
+            ]
+        ]
+    },
+    {
+        "id": "74dbbdc1c9f405cd",
+        "type": "debug",
+        "z": "f34c405573e2813b",
+        "g": "grp_editor_c1a45",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "152e573b077b5253",
+        "type": "http in",
+        "z": "f34c405573e2813b",
+        "g": "grp_editor_ab46d",
+        "name": "",
+        "url": "/sensorpost",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 110,
+        "y": 380,
+        "wires": [
+            [
+                "9e7f6ee0f5e958b4",
+                "b14d62c3df537614"
+            ]
+        ]
+    },
+    {
+        "id": "b14d62c3df537614",
+        "type": "http response",
+        "z": "f34c405573e2813b",
+        "g": "grp_editor_ab46d",
+        "name": "OK",
+        "statusCode": "200",
+        "headers": {},
+        "x": 430,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "9e7f6ee0f5e958b4",
+        "type": "debug",
+        "z": "f34c405573e2813b",
+        "g": "grp_editor_ab46d",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "494fee76a8429418",
+        "type": "comment",
+        "z": "f34c405573e2813b",
+        "g": "grp_editor_ab46d",
+        "name": "Server",
+        "info": "",
+        "x": 70,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "193234fdaea136a4",
+        "type": "comment",
+        "z": "f34c405573e2813b",
+        "g": "grp_editor_c1a45",
+        "name": "Client",
+        "info": "",
+        "x": 70,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "6b07e28fb8b8bb02",
+        "type": "comment",
+        "z": "f6e12809e43eb081",
+        "g": "7b3c34f6348d258c",
+        "name": "Readme",
+        "info": "",
+        "x": 120,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "92d9b7bdb7ecfbf3",
+        "type": "ui-markdown",
+        "z": "f6e12809e43eb081",
+        "g": "7b3c34f6348d258c",
+        "group": "7509d32238ef9003",
+        "name": "Inicio - explicación de laboratorios",
+        "order": 1,
+        "width": 12,
+        "height": "12",
+        "content": "# 📚 Flujo consolidado de laboratorios IoT - Node-RED\n\nEsta página inicial resume los laboratorios del flujo y permite entrar directamente a cada ejercicio desde el árbol lateral del dashboard o desde los enlaces siguientes.\n\n---\n\n## 🌡️ **Laboratorio 1: Sensores con alarmas**\n- Simula sensores con valores aleatorios.\n- Calcula temperatura y humedad.\n- Incluye versión con `function`, versión con `change + switch` y un indicador LED.\n- [Ir al Laboratorio 1 →](/dashboard/sensores)\n\n---\n\n## 📡 **Laboratorio 2: MQTT**\n- Publica datos simulados en Mosquitto local.\n- Se suscribe al tópico `UTMACH/#`.\n- Muestra gauges de temperatura/humedad y estado dinámico.\n- [Ir al Laboratorio 2 →](/dashboard/mqtt)\n\n---\n\n## 🔁 **Laboratorio 3: API REST - GET**\n- Genera valores de sensores desde un cliente.\n- Envía datos al servidor mediante una petición GET.\n- Actualiza indicadores visuales en el dashboard.\n- [Ir al Laboratorio 3 →](/dashboard/api-rest-get)\n\n---\n\n## ☁️ **Laboratorio 4: API REST - Clima**\n- Consume servicios externos de clima.\n- Integra WeatherStack y OpenWeather.\n- Incluye ciudad dinámica, gauges e indicador de día/noche.\n- [Ir al Laboratorio 4 →](/dashboard/api-rest-clima)\n\n---\n\n## 📨 **Laboratorio 5: API REST - POST**\n- Envía un objeto JSON mediante POST al endpoint `/sensorpost`.\n- El servidor recibe el JSON, lo muestra en depuración y responde `OK`.\n- [Ir al Laboratorio 5 →](/dashboard/api-rest-post)\n\n---\n\n> Cada laboratorio mantiene su lógica original en su pestaña correspondiente de Node-RED. Solo se reorganizó la presentación del dashboard y los contenedores visuales.\n",
+        "className": "",
+        "x": 180,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "nav_control_8a8f",
+        "type": "ui-control",
+        "z": "f6e12809e43eb081",
+        "g": "c39eb3d1afd74a4e",
+        "name": "Navegación general del dashboard",
+        "ui": "83b381c77ae612cf",
+        "events": "change",
+        "x": 700,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "btn_inicio_next_",
+        "type": "ui-button",
+        "z": "f6e12809e43eb081",
+        "g": "c39eb3d1afd74a4e",
+        "group": "7509d32238ef9003",
+        "name": "Ir al Laboratorio 1",
+        "label": "Comenzar ⏩",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "tooltip": "Abrir Laboratorio 1",
+        "color": "#ffffff",
+        "bgcolor": "#1976D2",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\": \"🌡️ Lab 1 - Sensores\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 220,
+        "wires": [
+            [
+                "nav_control_8a8f"
+            ]
+        ]
+    },
+    {
+        "id": "md_lab_3da9dfab2",
+        "type": "ui-markdown",
+        "z": "f6e12809e43eb081",
+        "g": "c39eb3d1afd74a4e",
+        "group": "grp_md_197cbbb15",
+        "name": "Resumen - Laboratorio 1",
+        "order": 1,
+        "width": 12,
+        "height": 5,
+        "content": "# 🌡️ Laboratorio 1: Sensores con alarmas\n\nEste laboratorio trabaja con sensores simulados usando valores aleatorios. El flujo conserva tres partes principales:\n\n- **Sensor con Function:** calcula temperatura y humedad mediante código JavaScript.\n- **Sensor con Change + Switch:** realiza los cálculos usando nodos visuales y evalúa condiciones de alarma.\n- **Sensor LED:** cambia el estado visual del LED según el valor generado.\n\nEl objetivo es comparar diferentes formas de procesar datos dentro de Node-RED sin modificar la lógica original del flujo.\n",
+        "className": "",
+        "x": 150,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "btn_back_4efec3b",
+        "type": "ui-button",
+        "z": "f6e12809e43eb081",
+        "g": "c39eb3d1afd74a4e",
+        "group": "grp_nav_78721e5d",
+        "name": "Back",
+        "label": "⬅️ Back",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "tooltip": "Página anterior",
+        "color": "#ffffff",
+        "bgcolor": "#607D8B",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\": \"🏠 Inicio\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 320,
+        "wires": [
+            [
+                "nav_control_8a8f"
+            ]
+        ]
+    },
+    {
+        "id": "btn_next_ff9ddbb",
+        "type": "ui-button",
+        "z": "f6e12809e43eb081",
+        "g": "c39eb3d1afd74a4e",
+        "group": "grp_nav_78721e5d",
+        "name": "Next",
+        "label": "Next ⏩",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "tooltip": "Página siguiente",
+        "color": "#ffffff",
+        "bgcolor": "#1976D2",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\": \"📡 Lab 2 - MQTT\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 320,
+        "wires": [
+            [
+                "nav_control_8a8f"
+            ]
+        ]
+    },
+    {
+        "id": "md_lab_97a1b099b",
+        "type": "ui-markdown",
+        "z": "f6e12809e43eb081",
+        "g": "c39eb3d1afd74a4e",
+        "group": "grp_md_e0d461c77",
+        "name": "Resumen - Laboratorio 2",
+        "order": 1,
+        "width": 12,
+        "height": 5,
+        "content": "# 📡 Laboratorio 2: MQTT\n\nEste laboratorio implementa comunicación MQTT usando Mosquitto local.\n\n- **Publicador:** genera temperatura y humedad simuladas y las envía al tópico configurado.\n- **Suscriptor:** escucha `UTMACH/#` y recibe los mensajes publicados.\n- **Dashboard:** muestra temperatura, humedad y estado clasificado del sensor.\n\nLa finalidad es comprender el flujo de publicación/suscripción y visualizar los datos en tiempo real.\n",
+        "className": "",
+        "x": 150,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "btn_back_43ff780",
+        "type": "ui-button",
+        "z": "f6e12809e43eb081",
+        "g": "c39eb3d1afd74a4e",
+        "group": "grp_nav_6ededdf7",
+        "name": "Back",
+        "label": "⬅️ Back",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "tooltip": "Página anterior",
+        "color": "#ffffff",
+        "bgcolor": "#607D8B",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\": \"🌡️ Lab 1 - Sensores\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 400,
+        "wires": [
+            [
+                "nav_control_8a8f"
+            ]
+        ]
+    },
+    {
+        "id": "btn_next_fe6ed29",
+        "type": "ui-button",
+        "z": "f6e12809e43eb081",
+        "g": "c39eb3d1afd74a4e",
+        "group": "grp_nav_6ededdf7",
+        "name": "Next",
+        "label": "Next ⏩",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "tooltip": "Página siguiente",
+        "color": "#ffffff",
+        "bgcolor": "#1976D2",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\": \"🔁 Lab 3 - API REST GET\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 400,
+        "wires": [
+            [
+                "nav_control_8a8f"
+            ]
+        ]
+    },
+    {
+        "id": "md_lab_b356aeaf4",
+        "type": "ui-markdown",
+        "z": "f6e12809e43eb081",
+        "g": "c39eb3d1afd74a4e",
+        "group": "grp_md_d4263ebb5",
+        "name": "Resumen - Laboratorio 3",
+        "order": 1,
+        "width": 12,
+        "height": 5,
+        "content": "# 🔁 Laboratorio 3: API REST - GET\n\nEste laboratorio conecta un cliente y un servidor HTTP dentro de Node-RED.\n\n- El cliente genera valores aleatorios de temperatura y humedad.\n- Los datos se envían mediante una petición GET.\n- El servidor recibe los parámetros, responde con HTML y actualiza los indicadores del dashboard.\n\nEl ejercicio permite entender cómo Node-RED puede actuar como cliente y servidor REST al mismo tiempo.\n",
+        "className": "",
+        "x": 150,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "btn_back_86454f7",
+        "type": "ui-button",
+        "z": "f6e12809e43eb081",
+        "g": "c39eb3d1afd74a4e",
+        "group": "grp_nav_f3abaf63",
+        "name": "Back",
+        "label": "⬅️ Back",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "tooltip": "Página anterior",
+        "color": "#ffffff",
+        "bgcolor": "#607D8B",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\": \"📡 Lab 2 - MQTT\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 480,
+        "wires": [
+            [
+                "nav_control_8a8f"
+            ]
+        ]
+    },
+    {
+        "id": "btn_next_e0f9318",
+        "type": "ui-button",
+        "z": "f6e12809e43eb081",
+        "g": "c39eb3d1afd74a4e",
+        "group": "grp_nav_f3abaf63",
+        "name": "Next",
+        "label": "Next ⏩",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "tooltip": "Página siguiente",
+        "color": "#ffffff",
+        "bgcolor": "#1976D2",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\": \"☁️ Lab 4 - API REST Clima\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 480,
+        "wires": [
+            [
+                "nav_control_8a8f"
+            ]
+        ]
+    },
+    {
+        "id": "md_lab_34975bade",
+        "type": "ui-markdown",
+        "z": "f6e12809e43eb081",
+        "g": "c39eb3d1afd74a4e",
+        "group": "grp_md_f825130da",
+        "name": "Resumen - Laboratorio 4",
+        "order": 1,
+        "width": 12,
+        "height": 5,
+        "content": "# ☁️ Laboratorio 4: API REST - Clima\n\nEste laboratorio consume servicios externos de clima y presenta la información en el dashboard.\n\n- **WeatherStack:** obtiene temperatura, humedad, ubicación y estado día/noche.\n- **OpenWeather:** consulta datos climáticos y convierte la temperatura a grados Celsius.\n- **Entrada de ciudad:** permite actualizar la consulta desde el dashboard.\n\nEl objetivo es practicar consumo de APIs externas y representación visual de datos.\n",
+        "className": "",
+        "x": 150,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "btn_back_8a4797a",
+        "type": "ui-button",
+        "z": "f6e12809e43eb081",
+        "g": "c39eb3d1afd74a4e",
+        "group": "grp_nav_a0c09bce",
+        "name": "Back",
+        "label": "⬅️ Back",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "tooltip": "Página anterior",
+        "color": "#ffffff",
+        "bgcolor": "#607D8B",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\": \"🔁 Lab 3 - API REST GET\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 560,
+        "wires": [
+            [
+                "nav_control_8a8f"
+            ]
+        ]
+    },
+    {
+        "id": "btn_next_807d7ef",
+        "type": "ui-button",
+        "z": "f6e12809e43eb081",
+        "g": "c39eb3d1afd74a4e",
+        "group": "grp_nav_a0c09bce",
+        "name": "Next",
+        "label": "Next ⏩",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "tooltip": "Página siguiente",
+        "color": "#ffffff",
+        "bgcolor": "#1976D2",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\": \"📨 Lab 5 - API REST POST\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 560,
+        "wires": [
+            [
+                "nav_control_8a8f"
+            ]
+        ]
+    },
+    {
+        "id": "md_lab_6c71cee73",
+        "type": "ui-markdown",
+        "z": "f6e12809e43eb081",
+        "g": "c39eb3d1afd74a4e",
+        "group": "grp_md_bbaf88074",
+        "name": "Resumen - Laboratorio 5",
+        "order": 1,
+        "width": 12,
+        "height": 5,
+        "content": "# 📨 Laboratorio 5: API REST - POST\n\nEste laboratorio envía datos mediante el método POST.\n\n- El cliente envía un JSON con temperatura y humedad.\n- El servidor recibe el contenido en el endpoint `/sensorpost`.\n- La respuesta del servidor confirma la recepción con `OK`.\n\nEste ejercicio ayuda a diferenciar el envío de datos por POST frente a las consultas GET.\n",
+        "className": "",
+        "x": 150,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "btn_back_c345514",
+        "type": "ui-button",
+        "z": "f6e12809e43eb081",
+        "g": "c39eb3d1afd74a4e",
+        "group": "grp_nav_da80a0f6",
+        "name": "Back",
+        "label": "⬅️ Back",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "tooltip": "Página anterior",
+        "color": "#ffffff",
+        "bgcolor": "#607D8B",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\": \"☁️ Lab 4 - API REST Clima\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 640,
+        "wires": [
+            [
+                "nav_control_8a8f"
+            ]
+        ]
+    },
+    {
+        "id": "btn_next_e69f75e",
+        "type": "ui-button",
+        "z": "f6e12809e43eb081",
+        "g": "c39eb3d1afd74a4e",
+        "group": "grp_nav_da80a0f6",
+        "name": "Next",
+        "label": "Next ⏩",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "tooltip": "Página siguiente",
+        "color": "#ffffff",
+        "bgcolor": "#1976D2",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\": \"🏠 Inicio\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 640,
+        "wires": [
+            [
+                "nav_control_8a8f"
+            ]
+        ]
+    }
+]
